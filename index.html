@@ -1,0 +1,1009 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Set & Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO TITLE & DESCRIPTION (CRITICAL) -->
+    <title>Laundrii | Professional Laundry Services in Ottawa & Gatineau</title>
+    <meta name="description" content="Professional laundry service with free pickup and delivery in Ottawa & Gatineau. Wash & fold, dry cleaning, and expert garment care. Book online today.">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Laundrii | Professional Laundry Services in Ottawa & Gatineau">
+    <meta property="og:description" content="Professional laundry service with free pickup and delivery. Save time and get perfectly folded clothes delivered to your door.">
+    <meta property="og:image" content="https://yourusername.github.io/repo-name/images/pexels-adrienne-andersen-1174503-2254065.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/repo-name/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Laundrii | Professional Laundry Services">
+    <meta name="twitter:description" content="Professional laundry service with free pickup and delivery in Ottawa & Gatineau.">
+    <meta name="twitter:image" content="https://yourusername.github.io/repo-name/images/pexels-adrienne-andersen-1174503-2254065.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/repo-name/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="keywords" content="laundry service, Ottawa laundry, Gatineau laundry, wash and fold, dry cleaning, pickup and delivery, professional laundry">
+    <meta name="author" content="Laundrii">
+    <meta name="robots" content="index, follow">
+    
+    <!-- CSS and Font Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Inline Styles -->
+    <style>
+        .hero-with-image {
+            position: relative;
+            padding: 120px 0 80px;
+            text-align: center;
+            overflow: hidden;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+            z-index: -1;
+        }
+        
+        .hero-with-image .hero-content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px 40px;
+            border-radius: 12px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        
+        .hero-with-image h1 {
+            color: var(--dark-color);
+            font-size: 42px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+        }
+        
+        .hero-with-image p {
+            color: var(--gray-color);
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* New image sections */
+        .image-section {
+            padding: 60px 0;
+            background-color: var(--light-color);
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .image-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-card-content {
+            padding: 25px;
+            background: var(--white-color);
+        }
+        
+        .image-card h3 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .image-card p {
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        
+        .full-width-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 40px 0;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0;
+        }
+        
+        .side-by-side img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .side-by-side-content {
+            padding: 20px;
+        }
+        
+        /* CleanCloud iframe styles */
+        .cleancloud-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            margin-top: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .booking-section {
+            background-color: var(--light-color);
+            padding: 60px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-with-image {
+                padding: 100px 0 60px;
+                min-height: 400px;
+            }
+            
+            .hero-with-image .hero-content {
+                padding: 30px 20px;
+            }
+            
+            .hero-with-image h1 {
+                font-size: 32px;
+            }
+            
+            .side-by-side {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .full-width-image {
+                height: 300px;
+            }
+            
+            .cleancloud-iframe {
+                height: 700px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-with-image {
+                min-height: 350px;
+            }
+            
+            .hero-with-image h1 {
+                font-size: 28px;
+            }
+            
+            .hero-with-image p {
+                font-size: 16px;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .full-width-image {
+                height: 250px;
+            }
+            
+            .cleancloud-iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header - Same for all pages -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Laundrii</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#about">About</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                
+                <a href="https://cleancloudapp.com/" class="btn book-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-calendar-alt"></i> Book Now
+                </a>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <!-- Home Page -->
+    <section id="home" class="page">
+        <section class="hero-with-image">
+            <img src="images/pexels-adrienne-andersen-1174503-2254065.jpg" alt="Laundry Service Background" class="hero-image-background">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>We pick up, wash, and fold your laundry.</h1>
+                    <p>Professional laundry service with free pickup and delivery. Save time and get perfectly folded clothes delivered to your door.</p>
+                    <a href="https://cleancloudapp.com/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 30px;">Our Professional Process</h2>
+                <div class="side-by-side">
+                    <div class="side-by-side-content">
+                        <h3>Expert Care for Your Clothes</h3>
+                        <p>We use state-of-the-art equipment and eco-friendly detergents to ensure your clothes receive the best possible care. Every garment is treated with attention and precision.</p>
+                        <p style="margin-top: 15px;">From delicate fabrics to everyday wear, we handle all types of laundry with professional expertise.</p>
+                    </div>
+                    <img src="images/seongmin-park-p1qYb9pvLPU-unsplash.jpg" alt="Professional Laundry Equipment">
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works?</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Schedule Your Pickup</h3>
+                            <p>Schedule your pickup through our website, app or by text. You pick the place, we'll bring the bags!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Expert Professional Cleaning</h3>
+                            <p>We handle everything with care. Professional cleaning with free pickup and delivery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Fresh & Folded Delivery</h3>
+                            <p>Everything comes back fresh & folded within 1 day. Need it sooner? No worries! Rush services are available.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="steps-cta">
+                    <a href="https://cleancloudapp.com/" class="btn steps-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Service Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2>Experience why customers rely on us.</h2>
+                
+                <img src="images/waldemar-brandt-NPPNHZK1U0s-unsplash.jpg" alt="Clean Laundry Results" class="full-width-image">
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Big fan of these guys, the prices are fair and competitive and the service is always up to par. I hate folding laundry so this is purely a win win for me. Would recommend."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Gorges T</h4>
+                                <p>Customer since 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I've been using their service since early days on Albert, Always professional, efficient. Laundry being hand delivered to my home, folded and ready to be put away!? Can't think of a better time saver. Thanks guys!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Antonia Danto</h4>
+                                <p>Customer since 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Services Page -->
+    <section id="services" class="page" style="display: none;">
+        <section class="hero-with-image">
+            <img src="images/pexels-adrienne-andersen-1174503-2254065.jpg" alt="Laundry Services Background" class="hero-image-background">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Our Laundry Services</h1>
+                    <p>Professional wash & fold and dry cleaning with free pickup and delivery in Ottawa & Gatineau.</p>
+                    <a href="https://cleancloudapp.com/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Service Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 20px;">Our Professional Equipment</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: var(--gray-color); max-width: 800px; margin-left: auto; margin-right: auto;">
+                    We use commercial-grade equipment to ensure the best results for your laundry.
+                </p>
+                
+                <div class="image-grid">
+                    <div class="image-card">
+                        <img src="images/yun-cho-R5NdfEnbcYo-unsplash.jpg" alt="Industrial Washing Machines">
+                        <div class="image-card-content">
+                            <h3>Industrial Washers</h3>
+                            <p>High-capacity commercial washing machines that handle large loads efficiently while being gentle on fabrics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="image-card">
+                        <img src="images/seongmin-park-p1qYb9pvLPU-unsplash.jpg" alt="Folding and Packaging">
+                        <div class="image-card-content">
+                            <h3>Expert Folding</h3>
+                            <p>Professional folding techniques that keep your clothes neat and ready for storage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Our Services</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Wash & Fold</h3>
+                            <p>Professional washing, drying, and folding service. Perfect for everyday clothes, towels, and linens.</p>
+                            <p style="margin-top: 15px;"><strong>What we do:</strong></p>
+                            <ul style="text-align: left; margin-top: 10px; color: var(--gray-color);">
+                                <li>Separate colors and fabrics</li>
+                                <li>Use eco-friendly detergents</li>
+                                <li>Professional folding</li>
+                                <li>Return in clean packaging</li>
+                            </ul>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Book Wash & Fold
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Dry Cleaning</h3>
+                            <p>Professional dry cleaning for delicate fabrics, suits, dresses, and special garments.</p>
+                            <p style="margin-top: 15px;"><strong>What we clean:</strong></p>
+                            <ul style="text-align: left; margin-top: 10px; color: var(--gray-color);">
+                                <li>Suits and blazers</li>
+                                <li>Dresses and skirts</li>
+                                <li>Wool and silk garments</li>
+                                <li>Wedding and formal wear</li>
+                            </ul>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Book Dry Cleaning
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Free Pickup & Delivery</h3>
+                            <p>We offer <strong>FREE pickup and delivery</strong> in Ottawa and Gatineau. No hidden fees, no delivery charges.</p>
+                            <p style="margin-top: 15px;"><strong>Service areas:</strong></p>
+                            <ul style="text-align: left; margin-top: 10px; color: var(--gray-color);">
+                                <li>Ottawa (all neighborhoods)</li>
+                                <li>Gatineau region</li>
+                                <li>Flexible scheduling</li>
+                                <li>We provide laundry bags</li>
+                            </ul>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Schedule Pickup
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" style="background-color: var(--light-color);">
+            <div class="container">
+                <h2>How Our Service Works</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">1. Schedule Pickup</h3>
+                            <p>Book online or call us to schedule a pickup time that works for you. We'll bring the laundry bags!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">2. We Clean</h3>
+                            <p>We professionally clean your laundry using eco-friendly detergents and state-of-the-art equipment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">3. Delivery</h3>
+                            <p>Your clean, folded laundry is delivered back to your door within 24 hours. Rush service available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- About Us Page -->
+    <section id="about" class="page" style="display: none;">
+        <section class="hero-with-image">
+            <img src="images/pexels-adrienne-andersen-1174503-2254065.jpg" alt="About Us Background" class="hero-image-background">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>About Laundrii</h1>
+                    <p>With over 20 years in the industry, we bring expert care and dedication to every garment we handle.</p>
+                    <a href="https://cleancloudapp.com/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Service Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section" style="padding: 40px 0;">
+            <div class="container">
+                <img src="images/waldemar-brandt-NPPNHZK1U0s-unsplash.jpg" alt="Our Laundry Facility" class="full-width-image">
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Our Story & Values</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>20+ Years of Experience</h3>
+                            <p>With over 20 years in the industry, we bring expert care and dedication to every garment we handle, ensuring quality and reliability you can trust.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Best Technology & Products</h3>
+                            <p>Utilizing the best products and the latest technology, we guarantee a flawless clean that's efficient and environmentally friendly, making laundry effortless for you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Eco-Friendly Commitment</h3>
+                            <p>We prioritize sustainability by using eco-friendly, biodegradable detergents that are gentle on your clothes and the planet. We are eco-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="steps-cta">
+                    <a href="https://cleancloudapp.com/" class="btn steps-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book with Confidence
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="container">
+                <div class="side-by-side">
+                    <div class="side-by-side-content">
+                        <h3>Quality You Can Trust</h3>
+                        <p>Every garment that comes through our facility receives individual attention. Our team is trained to handle all types of fabrics and clothing with the utmost care.</p>
+                        <p style="margin-top: 15px;">We believe in doing laundry the right way - with attention to detail, quality products, and a commitment to excellence.</p>
+                    </div>
+                    <img src="images/yun-cho-R5NdfEnbcYo-unsplash.jpg" alt="Quality Laundry Service">
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" style="background-color: var(--light-color);">
+            <div class="container">
+                <h2>Why Choose Laundrii?</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">Expert Care</h3>
+                            <p>Every garment receives individual attention from our experienced team. We treat your clothes with the same care we would our own.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">Fast & Reliable</h3>
+                            <p>We understand your time is valuable. That's why we offer fast turnaround times with reliable pickup and delivery schedules.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">Community Focused</h3>
+                            <p>Serving Ottawa and Gatineau for over two decades, we're proud to be part of the community and committed to providing excellent service to our neighbors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FAQ Page -->
+    <section id="faq" class="page" style="display: none;">
+        <section class="hero-with-image">
+            <img src="images/pexels-adrienne-andersen-1174503-2254065.jpg" alt="FAQ Background" class="hero-image-background">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Find answers to common questions about our laundry services</p>
+                    <a href="https://cleancloudapp.com/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Service Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section" style="padding: 40px 0;">
+            <div class="container">
+                <img src="images/seongmin-park-p1qYb9pvLPU-unsplash.jpg" alt="Laundry Facility FAQ" class="full-width-image">
+                <p style="text-align: center; margin-top: 20px; color: var(--gray-color); font-style: italic;">
+                    Our modern facility ensures your clothes receive the best care possible
+                </p>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Common Questions</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Do you accept cash?</h3>
+                            <p>✅ <strong>Yes, we accept cash</strong>, debit, credit cards and e-transfer. We offer multiple payment options for your convenience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Will it take long to get my clothes back?</h3>
+                            <p>❌ <strong>No</strong>, you will get your clothes back within <strong>24-48 hours maximum</strong> (except weekends). We offer fast turnaround times for all orders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Do you separate whites, colors, and special fabrics?</h3>
+                            <p>✅ <strong>Yes</strong>, we separate whites, darks and colors and also delicate items. We can also hand wash for an additional charge upon request.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Do you charge for pick ups and deliveries?</h3>
+                            <p>❌ <strong>No</strong>, we offer <strong>free pick up and free delivery</strong> for all our laundry services in Ottawa and Gatineau.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Do we need to be home for pick up and delivery?</h3>
+                            <p>❌ <strong>No</strong>, you can leave your laundry in front of the door and we will take care of it. We provide secure pickup and delivery even when you're not home.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>What if I have special instructions?</h3>
+                            <p>✅ We accommodate special requests! Just let us know in the booking form or contact us directly. We're here to make your laundry experience perfect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" style="background-color: var(--light-color);">
+            <div class="container">
+                <h2>Still Have Questions?</h2>
+                
+                <div class="side-by-side" style="margin-bottom: 40px;">
+                    <img src="images/waldemar-brandt-NPPNHZK1U0s-unsplash.jpg" alt="Contact Our Team">
+                    <div class="side-by-side-content">
+                        <h3>Get in Touch</h3>
+                        <p>Our customer service team is available to answer any questions you might have about our laundry services.</p>
+                        <div style="margin-top: 20px; color: var(--primary-color); font-weight: 600;">
+                            <p><i class="fas fa-phone"></i> (613) 978-2743</p>
+                            <p><i class="fas fa-envelope"></i> admin@laundrii.ca</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">Contact Us Directly</h3>
+                            <p>If you have more specific questions or need personalized assistance, our customer service team is here to help.</p>
+                            <div style="margin-top: 20px; color: var(--primary-color); font-weight: 600;">
+                                <p><i class="fas fa-phone"></i> (613) 978-2743</p>
+                                <p><i class="fas fa-envelope"></i> admin@laundrii.ca</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <h3 style="color: var(--dark-color); margin-bottom: 20px;">Ready to Get Started?</h3>
+                            <p>Book your first laundry service today and experience the convenience of professional laundry with free pickup and delivery.</p>
+                            <div style="text-align: center; margin-top: 30px;">
+                                <a href="https://cleancloudapp.com/" class="btn" style="background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-calendar-check"></i> Book Your First Pickup
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Pricing Page -->
+    <section id="pricing" class="page" style="display: none;">
+        <section class="hero-with-image">
+            <img src="images/pexels-adrienne-andersen-1174503-2254065.jpg" alt="Pricing Background" class="hero-image-background">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Pricing & Packages</h1>
+                    <p>Affordable laundry services with transparent pricing. No hidden fees.</p>
+                    <a href="https://cleancloudapp.com/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar-check"></i> Book Service Now
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="image-section">
+            <div class="container">
+                <div class="side-by-side">
+                    <img src="images/yun-cho-R5NdfEnbcYo-unsplash.jpg" alt="Value for Money Laundry">
+                    <div class="side-by-side-content">
+                        <h3>Quality Service, Fair Pricing</h3>
+                        <p>We believe in providing exceptional laundry service at prices that make sense. Our transparent pricing means no surprises - you always know what you're paying for.</p>
+                        <p style="margin-top: 15px;">Every service includes our commitment to quality, eco-friendly products, and free pickup and delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Simple & Transparent Pricing</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">$</div>
+                        <div class="step-content">
+                            <h3>Wash & Fold</h3>
+                            <p><strong>$1.50 per pound</strong> (minimum 10 lbs)</p>
+                            <p>Perfect for everyday laundry. We wash, dry, and fold your clothes.</p>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Book Wash & Fold
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">$$</div>
+                        <div class="step-content">
+                            <h3>Dry Cleaning</h3>
+                            <p><strong>From $8 per item</strong></p>
+                            <p>Professional dry cleaning for suits, dresses, and delicate fabrics.</p>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Book Dry Cleaning
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">✓</div>
+                        <div class="step-content">
+                            <h3>Free Delivery</h3>
+                            <p><strong>Always free</strong> in Ottawa & Gatineau</p>
+                            <p>No delivery charges ever. Free pickup and delivery for all services.</p>
+                            <a href="https://cleancloudapp.com/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-calendar-check"></i> Schedule Free Pickup
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- CleanCloud Booking Section -->
+    <section id="book" class="booking-section">
+        <div class="container">
+            <h2>Book Your Laundry Service</h2>
+            <p class="section-subtitle">Click the button below to book your service through our CleanCloud booking system</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://cleancloudapp.com/" class="btn" style="padding: 20px 40px; font-size: 18px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-calendar-check"></i> Book Now on CleanCloud
+                </a>
+                <p style="margin-top: 20px; color: var(--gray-color);">
+                    You will be redirected to our secure booking system
+                </p>
+            </div>
+            
+            <!-- Optional: You can also embed CleanCloud directly if they provide an embed code -->
+            <!-- <iframe src="https://cleancloudapp.com/" class="cleancloud-iframe" title="CleanCloud Booking System"></iframe> -->
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Laundrii</span>
+                    </div>
+                    <p>Professional laundry services with free pickup and delivery.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1899LUsefY/?mibextid=wwXIfr" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/laundriiteam?igsh=MTJpaTI1OXdrdTk5eg==" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>admin@laundrii.ca</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(613) 978-2743</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="https://cleancloudapp.com/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none;">
+                                <span>Book Online</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Laundrii. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+       // Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
+});
+// Page navigation
+const navLinksAll = document.querySelectorAll('.nav-links a:not([href*="cleancloudapp.com"])');
+const pages = document.querySelectorAll('.page');
+// Show home page by default
+document.getElementById('home').style.display = 'block';
+// Function to hide mobile menu
+function hideMobileMenu() {
+    navLinks.classList.remove('show');
+}
+// Add click events to all navigation links
+navLinksAll.forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Skip if it's an external link
+        if (this.getAttribute('href').includes('cleancloudapp.com')) {
+            return;
+        }
+        
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        
+        // Hide mobile menu
+        hideMobileMenu();
+        
+        // Update active nav link
+        navLinksAll.forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Show target page, hide others
+        pages.forEach(page => {
+            page.style.display = 'none';
+        });
+        
+        if (targetId === 'book') {
+            // Scroll to booking section
+            document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+            // Keep current page visible
+            document.querySelector('.page[style*="display: block"]').style.display = 'block';
+        } else if (targetId) {
+            document.getElementById(targetId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    });
+});
+// Handle footer links
+document.querySelectorAll('.footer-column a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (this.classList.contains('nav-link')) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            
+            // Hide mobile menu
+            hideMobileMenu();
+            
+            // Update active nav link
+            navLinksAll.forEach(nav => nav.classList.remove('active'));
+            const correspondingNavLink = document.querySelector(`.nav-links a[href="#${targetId}"]`);
+            if (correspondingNavLink) {
+                correspondingNavLink.classList.add('active');
+            }
+            
+            // Show target page, hide others
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            if (targetId) {
+                document.getElementById(targetId).style.display = 'block';
+                window.scrollTo(0, 0);
+            }
+        }
+    });
+});
+// Make logo clickable to go home
+document.querySelector('.logo').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Hide mobile menu
+    hideMobileMenu();
+    
+    // Update active nav link
+    navLinksAll.forEach(nav => nav.classList.remove('active'));
+    document.querySelector('.nav-links a[href="#home"]').classList.add('active');
+    
+    // Show home page, hide others
+    pages.forEach(page => {
+        page.style.display = 'none';
+    });
+    document.getElementById('home').style.display = 'block';
+    window.scrollTo(0, 0);
+});
+// Close menu when clicking outside on mobile
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+        const isClickInsideMenu = navLinks.contains(e.target) || menuToggle.contains(e.target);
+        if (!isClickInsideMenu && navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+        }
+    }
+});
+    </script>
+</body>
+</html>
